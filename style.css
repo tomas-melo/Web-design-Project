@@ -1,0 +1,119 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.header img{
+  margin: 0px;
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+body {
+  color: black;
+  font-size: 28px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Left banner */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 55px; 
+  height: 100%; 
+  background-image: url('porto-border-left.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  z-index: -1; /* Image in background */
+}
+
+/* Right banner */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50px; 
+  height: 100%; 
+  background-image: url('porto-border-right.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  z-index: -1; /* Image in background */
+}
+
+h3{
+  margin-left: 65px;
+  margin-right: 60px;
+  color: black;
+  text-align: center;
+  font-size: 35px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+p{
+  margin-top: 1em; /* Create a line break between paragraphs */
+  margin-bottom: 1em; /* Create a line break between paragraphs */
+  margin-left: 65px;
+  margin-right: 60px;
+  color: black;
+  font-size: 28px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+/*-------------------- NAVBAR --------------------------*/
+
+.navbar {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  font-size: 18px;
+  font-family: Verdana, Tahoma, sans-serif;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0px;
+}
+
+.navbar li { /* Start from the left of the page*/
+  float: left;
+  background-color:rgb(51, 51, 51,0.9);
+  backdrop-filter: blur(7px);
+  width: 16.666%; /* For 6 contents */
+}
+
+.navbar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover:not(.active) { /*Mouse selection (All with the exception of the selected tab) */
+  background-image: linear-gradient(147deg, #00c6fd 45%, #3cff99 100%);
+  font-size: 22px;
+
+  /*background-image: linear-gradient( 109.6deg,rgba(24,138,141,1) 11.2%,rgba(96,221,142,1)91.1% );*/
+  /*background-color: lightgreen; /*#111*/
+}
+
+.navbar .active { /*Selected one*/
+  background-image: linear-gradient(147deg, #002fad 50%, #25e7ff 100%);
+
+  /*background: linear-gradient(to right, #ff416c, #ff4b2b);*/
+}
+
+.navbar ul li{ /* Hide dropdown list */ 
+  display: none;
+}
+
+.navbar :hover ul li{ /* Show dropdown list with mouse selection */ 
+  display: contents;
+}
