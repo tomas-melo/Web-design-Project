@@ -26,7 +26,7 @@ body::before {
   left: 0;
   width: 55px; 
   height: 100%; 
-  background-image: url('porto-border-left.png');
+  background-image: url('../img/porto-border-left.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
@@ -41,14 +41,14 @@ body::after {
   right: 0;
   width: 50px; 
   height: 100%; 
-  background-image: url('porto-border-right.png');
+  background-image: url('../img/porto-border-right.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
   z-index: -1; /* Image in background */
 }
 
-h3{
+section h3{
   margin-left: 65px;
   margin-right: 60px;
   color: black;
@@ -57,7 +57,7 @@ h3{
   font-family:Arial, Helvetica, sans-serif;
 }
 
-p{
+section p{
   margin-top: 1em; /* Create a line break between paragraphs */
   margin-bottom: 1em; /* Create a line break between paragraphs */
   margin-left: 65px;
@@ -65,6 +65,11 @@ p{
   color: black;
   font-size: 28px;
   font-family:Arial, Helvetica, sans-serif;
+}
+
+footer{
+  color: #002fad;
+  font-size: 15px;
 }
 
 /*-------------------- NAVBAR --------------------------*/
@@ -84,7 +89,7 @@ p{
 .navbar li { /* Start from the left of the page*/
   float: left;
   background-color:rgb(51, 51, 51,0.9);
-  backdrop-filter: blur(7px);
+  backdrop-filter: blur(2px);
   width: 16.666%; /* For 6 contents */
 }
 
