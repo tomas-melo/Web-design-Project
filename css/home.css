@@ -1,0 +1,22 @@
+/*---------------------------------------------------------------------*/
+/*------------------------------ HOME PAGE ----------------------------*/
+/*---------------------------------------------------------------------*/
+
+section h3{
+    margin-left: 65px;
+    margin-right: 60px;
+    color: black;
+    text-align: center;
+    font-size: 35px;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  section p{
+    margin-top: 1em; /* Create a line break between paragraphs */
+    margin-bottom: 1em; /* Create a line break between paragraphs */
+    margin-left: 20%;
+    margin-right: 20%;
+    color: black;
+    font-size: 28px;
+    font-family:Arial, Helvetica, sans-serif;
+  }
