@@ -1,0 +1,46 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#map {
+    height: 80%;
+    width: 80%;
+    margin: 3% auto;
+}
+
+.info-window {
+    font-size: 14px;
+    color: #333;
+}
+
+.page-title {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size:150%; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    margin: auto auto; 
+  }
+
+.button {
+    display: flex;        /* Utilise Flexbox */
+    justify-content: center; /* Centre les éléments horizontalement dans le Flex container */
+}
+
+.button button{
+    padding: 1% 2%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+    font-size: 60%;
+    margin: 0 2%;
+
+}
+
+.button button:hover{
+    background-color: #0056b3;
+}
