@@ -1,0 +1,44 @@
+#calendar {
+    max-width: 90%;
+    margin:  auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour un effet de profondeur */
+}
+
+#calendar th, #calendar td {
+    border: 1px solid #ddd;
+    padding: 15px; /* Plus d'espace à l'intérieur des cellules */
+    text-align: center;
+}
+
+#calendar th {
+    width: 14%; /* 100% divisé par le nombre de colonnes (7) */
+    height: 100px; /* Hauteur fixe pour chaque cellule */
+    background-color: #005f73; /* Une couleur de fond différente pour les en-têtes */
+    color: white; /* Texte en blanc pour une meilleure visibilité */
+}
+#calendar tr {
+    height: 100px; /* Hauteur fixe pour les lignes */
+}
+
+.calendar-event {
+    background-color: #00b4d8; /* Couleur de fond pour les événements */
+    color: white; /* Texte en blanc pour une meilleure visibilité */
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Petite ombre pour les événements */
+}
+
+.calendar-event:hover {
+    background-color: #0077b6; /* Changement de couleur au survol */
+    cursor: pointer; /* Indique que l'élément est cliquable */
+}
+.page-title {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    margin: auto auto; 
+    padding-bottom: 2.5%;
+  }
