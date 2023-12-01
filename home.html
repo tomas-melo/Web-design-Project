@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="icon" href="img/logo-page.png" type="image/png">
+  <link rel="icon" href="img/main/logo-page.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 
 <body>
     <div class="PortoBanner">
-      <img src="img/porto-city-little.png">
+      <img src="img/main/porto-city-little.png">
     </div>
 
     <div class="progress-container">
@@ -25,7 +25,7 @@
     <script src="script/ScrollIndicator.js"></script>
   <header>
     <nav>
-      <img src="img/porto-gif.gif" class="Nav-logo" />
+      <img src="img/main/porto-gif.gif" class="Nav-logo"/>
 
       <ul class="navbar">
         <li class="nav-item active"><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
@@ -45,20 +45,50 @@
 
     <div id="homeContent" class="home-content">
       <section>
-        <h3> Bem-vindo! , Welcome !</h3>
-        <p>Porto (Portuguese pronunciation: [ˈpoɾtu]), also known in English as Oporto, is the second largest city in Portugal after Lisbon, 
-          the capital of the Porto District, and one of the Iberian Peninsula's major urban areas. Porto city proper, which is the entire 
-          municipality of Porto, is small compared to its metropolitan area, with an estimated population of just 231,800 people in a 
-          municipality with only 41.42 km2 (16 sq mi). Porto's metropolitan area has around 1.7 million people (2021) in an area of 2,395 km2 
-          (925 sq mi), making it the second-largest urban area in Portugal. It is recognized as a global city with a Gamma + rating from the 
-          Globalization and World Cities Research Network.
+        <h2 class="page-title"> BEM-VINDO! , WELCOME !</h2>
+        <p>
+          Welcome to our dedicated Porto website, a city rich in history, culture, and beauty. Explore our site to discover everything Porto has to offer, from the latest news to iconic landmarks and unique services. We are delighted to guide you through this virtual experience of one of Portugal's most captivating destinations!
         </p>
-        <p>Located along the Douro River estuary in northern Portugal, Porto is one of the oldest European centers, and its core was proclaimed 
-          a World Heritage Site by UNESCO in 1996, as the "Historic Centre of Porto, Luiz I Bridge and Monastery of Serra do Pilar". The 
-          historic area is also a National Monument of Portugal. The western part of its urban area extends to the coastline of the Atlantic 
-          Ocean. Its settlement dates back many centuries when it was an outpost of the Roman Empire. Its combined Celtic-Latin name, 
-          Portus Cale, has been referred to as the origin of the name Portugal, based on transliteration and oral evolution from Latin.
-        </p>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img/home/porto-portugal-city-church.jpg">
+            <div class="text">Caption Text</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="img/home/wallpaper-porto-place.jpg">
+            <div class="text">Caption Two</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img/home/wallpaper-porto-ponte.jpg">
+            <div class="text">Caption Three</div>
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        <script src="script/home.js"></script>
+          
+        <div class="highlights">
+          <h2>Highlights of Porto : </h2>
+          <ol role="list">
+            <li>Porto's historic centre is one of the oldest in Europe and has been recognised by UNESCO as a World Heritage Site. The narrow cobbled streets, colourful houses and centuries-old churches offer a glimpse into the city's rich history.</li>
+            <li>The bridges spanning the Douro River, such as the Dom Luís I Bridge, are emblematic of Porto. These majestic structures offer panoramic views over the city and are masterpieces of engineering. They also create a unique and memorable urban landscape.</li>
+            <li>Porto is a hotbed of culture and art. Museums, art galleries and theatres abound, showcasing the city's cultural heritage. Festivals and artistic events throughout the year make Porto a dynamic place for art and culture lovers.</li>
+            <li>Although Porto is often associated with its historic architecture, the city also offers access to magnificent beaches. The fine sandy beaches of Foz do Douro offer a tranquil escape, and the proximity of the sea provides opportunities for water sports and relaxing in the sun.</li>
+          </ol>
+        </div>
+        
+          <h2>Celebrities Testimonials</h2>
         <p>Port wine, one of Portugal's most famous exports, is named after Porto, since the metropolitan area, and in particular the cellars
           of Vila Nova de Gaia, were responsible for the packaging, transport, and export of fortified wine. In 2014 and 2017, Porto was 
           elected The Best European Destination by the Best European Destinations Agency. Porto is on the Portuguese Way path of the Camino 
@@ -80,7 +110,7 @@
       </section>
     </div>
   <footer>
-    <img src="img/FIT-Logo.png" class="FIT" alt="FIT"/>
+    <img src="img/main/FIT-Logo.png" class="FIT" alt="FIT"/>
     <h4> &nbsp; Web Design Project</h4>
     <h6>Created By</h6>
     <p>Kilyan BENTCHAKAL</p>
