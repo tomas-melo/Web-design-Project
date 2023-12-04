@@ -7,7 +7,7 @@
 
 #calendar th, #calendar td {
     border: 1px solid #ddd;
-    padding: 15px; /* Plus d'espace à l'intérieur des cellules */
+    padding: 1%; /* Plus d'espace à l'intérieur des cellules */
     text-align: center;
 }
 
@@ -23,6 +23,7 @@
 
 .calendar-event {
     background-color: #00b4d8; /* Couleur de fond pour les événements */
+    font-size:45%; 
     color: white; /* Texte en blanc pour une meilleure visibilité */
     padding: 10px;
     margin-top: 5px;
@@ -37,7 +38,7 @@
 .page-title {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.5em; 
+    font-size:150%; 
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
     margin: auto auto; 
     padding-bottom: 2.5%;

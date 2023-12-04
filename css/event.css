@@ -82,7 +82,7 @@
   .page-title {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.5em; /* Ajustez la taille de police selon vos besoins */
+    font-size: 150%; /* Ajustez la taille de police selon vos besoins */
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* Ombre portée pour le titre */
     margin: auto auto; /* Ajustez les marges selon vos besoins */
     padding-bottom: 2.5%;
