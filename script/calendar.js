@@ -20,7 +20,7 @@ function generateCalendar() {
     const year = new Date().getFullYear();
     const daysInMonth = new Date(year, month + 1, 0).getDate();
 
-    let table = `<table><tr><th>Lundi</th><th>Mardi</th><th>Mercredi</th><th>Jeudi</th><th>Vendredi</th><th>Samedi</th><th>Dimanche</th></tr><tr>`;
+    let table = `<table><tr><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thrusday</th><th>Friday</th><th>Saturday</th><th>Sunday</th></tr><tr>`;
 
     for (let i = 1; i <= daysInMonth; i++) {
         let day = new Date(year, month, i).getDay();
