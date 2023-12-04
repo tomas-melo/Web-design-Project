@@ -8,11 +8,12 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5em;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-    margin-bottom: 20px;
+    margin-bottom: 2vw;
 }
 
 h5{
-    margin-bottom: 20px;
+    margin-bottom: 3vw;
+    font-size: 2.2vw;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -28,8 +29,8 @@ h5{
   position: absolute;
   width: 6px;
   background-color: #002fad;
-  top: 175px;
-  bottom: -50px;
+  top: 230px;
+  bottom: -65px;
   left: 50%;
   margin-left: -3px;
 }
@@ -107,13 +108,19 @@ h5{
   background-image: linear-gradient(147deg, #00c6fd 45%, #3cff99 100%);
   position: relative;
   border-radius: 6px;
-  font-size: 20px;
+  font-size: 2.2vw;
   box-shadow: 0px 0px 13px 3px rgba(0, 0, 0, 0.8); 
 }
 
 .timeline-date{
-  margin-bottom: 20px;
+  margin-bottom: 1vw;
+  font-size: 3vw;
   font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.timeline p {
+  font-size: 2.2vw;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -153,13 +160,16 @@ h5{
   .left{
     left: 0px;
   }
+  .timeline img{
+    display: none;
+  }
 }
 
 .img-112O{
   position: absolute;
   top: 0px; 
-  left: 135%;
-  height:190px;
+  transform: translateX(135%);
+  height:20vw;
   width: auto;
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.8); 
 }
@@ -167,8 +177,8 @@ h5{
 .img-1757{
   position: absolute;
   top: 0px; 
-  left: -100%;
-  height:210px;
+  transform: translateX(-125%);
+  height:25vw;
   width: auto;
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.8); 
 }
@@ -176,8 +186,8 @@ h5{
 .img-1832{
   position: absolute;
   top: 0px; 
-  left: 138%;
-  height:190px;
+  transform: translateX(122%);
+  height:23vw;
   width: auto;
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.8); 
 }
@@ -185,8 +195,8 @@ h5{
 .img-2001{
   position: absolute;
   top: 0px; 
-  left: -105%;
-  height:190px;
+  transform: translateX(-125%);
+  height:20vw;
   width: auto;
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.8); 
 }
@@ -194,8 +204,8 @@ h5{
 .img-2003{
   position: absolute;
   top: 0px; 
-  left: 135%;
-  height:190px;
+  transform: translateX(115%);
+  height:22.5vw;
   width: auto;
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.8); 
 }
@@ -203,8 +213,8 @@ h5{
 .img-2005{
   position: absolute;
   top: 0px; 
-  left: -102%;
-  height:207px;
+  transform: translateX(-125%);
+  height:23vw;
   width: auto;
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.8); 
 }
@@ -212,8 +222,8 @@ h5{
 .img-2014{
   position: absolute;
   top: 0px; 
-  left: 133%;
-  height:165px;
+  transform: translateX(113%);
+  height:18vw;
   width: auto;
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.8); 
 }
@@ -221,8 +231,8 @@ h5{
 .img-2023{
   position: absolute;
   top: 0px; 
-  left:-98%;
-  height: 165px;
+  transform: translateX(-165%);
+  height: 15vw;
   width: auto;
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.8); 
 }
