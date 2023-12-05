@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Porto - Services</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="icon" href="img/main/logo-page.png" type="image/png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/services.css">
+</head>
+
+<body>
+    <div class="PortoBanner">
+      <img src="img/main/porto-city-little.png">
+    </div>
+
+    <div class="progress-container">
+      <div class="progress-bar" id="ScrollIndicator"></div>
+    </div>
+
+    <script src="script/ScrollIndicator.js"></script>
+  <header>
+    <nav>
+      <img src="img/main/porto-gif.gif" class="Nav-logo"/>
+
+      <ul class="navbar">
+        <li class="nav-item"><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+        <li class="nav-item"><a href="event.html"><i class="fas fa-newspaper"></i> News</a>
+          <ul>
+            <li class="nav-item dropdown"><a href="event.html"><i class="fa-regular fa-calendar-check"></i> Events</a></li>
+            <li class="nav-item dropdown"><a href="calendar.html"><i class="fa-solid fa-calendar-days"></i> Calendar</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="history.html"><i class="fa-solid fa-book-open"></i> History</a></li>
+        <li class="nav-item"><a href="sightseeings.html"><i class="fa-solid fa-city"></i> Sightseeings</a></li>
+        <li class="nav-item active"><a href="services.html"><i class="fa-solid fa-bell-concierge"></i> Services</a></li>
+        <li class="nav-item last"><a href="contact.html"><i class="fa-solid fa-address-book"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <h2 class="page-title">BAR & RESTAURANTS</h2>
+    <div id="map"></div>
+    <div class="button">
+        <a id="showBars" onclick="showPlaces('bar')"><i class="fa-solid fa-beer-mug-empty"></i> BAR</a>
+        <a id="showRestaurants" onclick="showPlaces('restaurant')"><i class="fa-solid fa-utensils"></i> RESTAURANT</a>
+        <a onclick="toggleInfowindows(true)"><i class="fa-solid fa-eye"></i> SHOW INFORMATION</a>
+        <a onclick="toggleInfowindows(false)"><i class="fa-solid fa-eye-slash"></i> HIDE INFORMATION</a>
+    </div>
+    <script src="script/services.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWmhIBixPW_SuMdduUUZRUz09JqWHKG9w&callback=initMap&libraries=places">
+    </script>
+</body>
+<footer>
+    <img src="img/main/FIT-Logo.png" class="FIT" alt="FIT"/>
+    <h4> &nbsp; Web Design Project</h4>
+    <h6>Created By</h6>
+    <p>Kilyan BENTCHAKAL</p>
+    <p>Tomas MELO</p>
+    <p>Vincent RODRIGUES</p>
+  </footer>
+</html>
