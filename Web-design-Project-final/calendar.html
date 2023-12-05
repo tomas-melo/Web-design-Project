@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Porto - Calendar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/calendar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="img/main/logo-page.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="PortoBanner">
+      <img src="img/main/porto-city-little.png">
+    </div>
+
+    <div class="progress-container">
+      <div class="progress-bar" id="ScrollIndicator"></div>
+    </div>
+
+    <script src="script/ScrollIndicator.js"></script>
+  <header>
+    <nav>
+      <img src="img/main/porto-gif.gif" class="Nav-logo" />
+
+      <ul class="navbar">
+        <li class="nav-item"><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+        <li class="nav-item active"><a href="event.html"><i class="fas fa-newspaper"></i> News</a>
+          <ul>
+            <li class="nav-item dropdown"><a href="event.html"><i class="fa-regular fa-calendar-check"></i> Events</a></li>
+            <li class="nav-item dropdown"><a href="calendar.html"><i class="fa-solid fa-calendar-days"></i> Calendar</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="history.html"><i class="fa-solid fa-book-open"></i> History</a></li>
+        <li class="nav-item"><a href="sightseeings.html"><i class="fa-solid fa-city"></i> Sightseeings</a></li>
+        <li class="nav-item"><a href="services.html"><i class="fa-solid fa-bell-concierge"></i> Services</a></li>
+        <li class="nav-item last"><a href="contact.html"><i class="fa-solid fa-address-book"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <h2 class="page-title">FUTURE EVENTS CALENDAR</h2>
+    <div id="calendar"></div>
+    <div id="events">
+    </div>
+    <footer>
+      <img src="img/main/FIT-Logo.png" class="FIT" alt="FIT"/>
+      <h4> &nbsp; Web Design Project</h4>
+      <h6>Created By</h6>
+      <p>Kilyan BENTCHAKAL</p>
+      <p>Tomas MELO</p>
+      <p>Vincent RODRIGUES</p>
+    </footer>
+    <script src="script/calendar.js"></script>
+    <script>
+    addEventToStorage('Libertar talento para o futuro', '2023-12-10','img/event1.jpg');
+    addEventToStorage('Intro to Porto Tech Scene', '2023-12-20','img/event2.jpg');
+  </script>
+</body>
+</html>

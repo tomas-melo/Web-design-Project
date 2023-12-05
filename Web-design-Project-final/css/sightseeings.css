@@ -1,0 +1,51 @@
+.page-title {
+    color: black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5vw;
+    /* Make text responsive */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+
+.sightseeing-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    margin: 50px auto;
+}
+
+.sightseeing-info {
+    width: 60%;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    color: #555;
+}
+
+.sightseeing-info h2 {
+    color: blue;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5vw;
+}
+
+.sightseeing-info p {
+    margin-bottom: 15px;
+}
+
+.sightseeing-image-rib,
+.sightseeing-image-lello,
+.sightseeing-image-jardim,
+.sightseeing-image-capela {
+    width: 35%;
+}
+
+.sightseeing-image-rib img,
+.sightseeing-image-lello img,
+.sightseeing-image-jardim img,
+.sightseeing-image-capela img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
