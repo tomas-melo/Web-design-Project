@@ -25,8 +25,8 @@ body, html {
   }
 
 .button {
-    display: flex;        /* Utilise Flexbox */
-    justify-content: center; /* Centre les éléments horizontalement dans le Flex container */
+    display: flex;     
+    justify-content: center; 
 }
 
 .button button{

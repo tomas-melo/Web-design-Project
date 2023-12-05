@@ -57,7 +57,7 @@ body::after {
 footer {
   background-color: #002fad;
   width: 100%;
-  height: 25%;
+  min-height: 25%;
   font-size: 15px;
   position: relative;
   text-align: center;
