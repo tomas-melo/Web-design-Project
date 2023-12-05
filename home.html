@@ -29,7 +29,7 @@
 
       <ul class="navbar">
         <li class="nav-item active"><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
-        <li class="nav-item"><a href="#news"><i class="fas fa-newspaper"></i> News</a>
+        <li class="nav-item"><a href="event.html"><i class="fas fa-newspaper"></i> News</a>
           <ul>
             <li class="nav-item dropdown"><a href="event.html"><i class="fa-regular fa-calendar-check"></i> Events</a></li>
             <li class="nav-item dropdown"><a href="calendar.html"><i class="fa-solid fa-calendar-days"></i> Calendar</a></li>
@@ -71,12 +71,11 @@
           <a class="prev" onclick="plusSlides(-1)">❮</a>
           <a class="next" onclick="plusSlides(1)">❯</a>
         </div>
-        <div style="text-align:center">
+        <div class="slide-dots">
           <span class="dot" onclick="currentSlide(1)"></span> 
           <span class="dot" onclick="currentSlide(2)"></span> 
           <span class="dot" onclick="currentSlide(3)"></span> 
         </div>
-        <script src="script/home.js"></script>
           
         <div class="highlights">
           <h2>Highlights of Porto : </h2>
@@ -88,25 +87,49 @@
           </ol>
         </div>
         
-          <h2>Celebrities Testimonials</h2>
-        <p>Port wine, one of Portugal's most famous exports, is named after Porto, since the metropolitan area, and in particular the cellars
-          of Vila Nova de Gaia, were responsible for the packaging, transport, and export of fortified wine. In 2014 and 2017, Porto was 
-          elected The Best European Destination by the Best European Destinations Agency. Porto is on the Portuguese Way path of the Camino 
-          de Santiago.
-        </p>
-        <p>In 1996, UNESCO recognized Porto's historic center as a World Heritage Site. Among the architectural highlights of the city, 
-          Oporto Cathedral is the oldest surviving structure, together with the small romanesque Church of Cedofeita, the gothic Igreja de 
-          São Francisco (Church of Saint Francis), the remnants of the city walls and a few 15th-century houses. The baroque style is well 
-          represented in the city in the elaborate gilt work interior decoration of the churches of St. Francis (São Francisco) and St. Claire 
-          (Santa Clara), the churches of Mercy (Misericórdia) and of the Clerics (Clérigos), the Episcopal Palace of Porto, and others. 
-          The neoclassicism and romanticism of the 19th and 20th centuries also added interesting monuments to the landscape of the city, 
-          like the magnificent Stock Exchange Palace (Palácio da Bolsa), the Hospital of Saint Anthony, the Municipality, the buildings in 
-          the Liberdade Square and the Avenida dos Aliados, the tile-adorned São Bento railway station and the gardens of the Crystal Palace 
-          (Palácio de Cristal). A guided visit to the Palácio da Bolsa, and in particular, the Arab Room is a major tourist attraction.
-        </p>
-        <p>Many of the city's oldest houses are at risk of collapsing. The population in Oporto municipality dropped by nearly 100,000 
-          since the 1980s, but the number of permanent residents in the outskirts and satellite towns has grown strongly.
-        </p>
+        <h2>Celebrities Testimonials</h2>
+        <div class="carousel-container">
+          <div class="testimonial-carousel">
+            <div class="testimonial testimonial-active">
+              <img src="img/home/pablo-picasso.jpg">
+              <h5>Pablo Picasso</h5>
+              <p>“ Porto's cultural richness lies in its diversity, where every corner is a new page in a fascinating book. ”</p>
+            </div>
+            <div class="testimonial">
+              <img src="img/home/elon-musk.jpg">
+              <h5>Elon Musk</h5>
+              <p>“ Porto's majestic bridges are links between history and the future, a perfect balance between tradition and innovation. ”</p>
+            </div>
+            <div class="testimonial">
+              <img src="img/home/jk-rowling.jpg">
+              <h5>J.K. Rowling</h5>
+              <p>“ There's something magical in the Porto air that brings creativity and inspiration to life. ”</p>
+            </div>
+            <div class="testimonial">
+              <img src="img/home/albert-einstein.jpg">
+              <h5>Albert Einstein</h5>
+              <p>“ Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world. ”</p>
+            </div>
+          </div>
+          <a class="prev-tes" onclick="changeTestimonial(-1)">❮</a>
+          <a class="next-tes" onclick="changeTestimonial(1)">❯</a>
+        </div>
+        <div class="testimonial-dots">
+          <span class="dot-tes dot-tes-active" onclick="currentTestimonial(1)"></span>
+          <span class="dot-tes" onclick="currentTestimonial(2)"></span>
+          <span class="dot-tes" onclick="currentTestimonial(3)"></span>
+          <span class="dot-tes" onclick="currentTestimonial(4)"></span>
+        </div>
+
+        <h2>Want to discover more ?</h2>
+        <h4 style="text-align: center;">Start your Porto adventure now by exploring our sections:</h4>
+        <div class="explorer-container">
+          <a class="explore-button" href="#news"><i class="fas fa-newspaper"></i> News</a>
+          <a class="explore-button" href="history.html"><i class="fa-solid fa-book-open"></i> History</a>
+          <a class="explore-button" href="#sightseeings"><i class="fa-solid fa-city"></i> Sightseeings</a>
+          <a class="explore-button" href="#services"><i class="fa-solid fa-bell-concierge"></i> Services</a>
+          <a class="explore-button" href="#contact"><i class="fa-solid fa-address-book"></i> Contact</a>
+        </div>
       </section>
     </div>
   <footer>
@@ -117,6 +140,7 @@
     <p>Tomas MELO</p>
     <p>Vincent RODRIGUES</p>
   </footer>
+  <script src="script/home.js"></script>
 </body>
 </html>
 
