@@ -58,7 +58,6 @@ footer {
   background-color: #002fad;
   width: 100%;
   min-height: 25%;
-  font-size: 15px;
   position: relative;
   text-align: center;
   margin-top: 5%;
@@ -104,6 +103,9 @@ footer h6 {
 footer p {
   margin: 0.10%;
   font-size: 1.5vw; /* Text responsive */
+}
+footer p:last-child {
+margin: 0%;
 }
 
 /*---------------------- NAVBAR --------------------------*/

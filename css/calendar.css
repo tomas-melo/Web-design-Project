@@ -14,7 +14,7 @@
 #calendar th {
     width: 14%; /* 100% divisé par le nombre de colonnes (7) */
     height: 100px; /* Hauteur fixe pour chaque cellule */
-    background-color: #005f73; /* Une couleur de fond différente pour les en-têtes */
+    background: linear-gradient(147deg, #002fad 50%, #00c6fd 100%);
     color: white; /* Texte en blanc pour une meilleure visibilité */
 }
 #calendar tr {
@@ -22,17 +22,19 @@
 }
 
 .calendar-event {
-    background-color: #00b4d8; /* Couleur de fond pour les événements */
+    background-color: #002fad; /* Couleur de fond pour les événements */
     font-size:45%; 
     color: white; /* Texte en blanc pour une meilleure visibilité */
     padding: 10px;
     margin-top: 5px;
+    border-bottom: 0.3vw solid #3cff99;
+    border-top: 0.3vw solid #00c6fd;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Petite ombre pour les événements */
 }
 
 .calendar-event:hover {
-    background-color: #0077b6; /* Changement de couleur au survol */
+    background: linear-gradient(147deg, #00c6fd 45%, #3cff99 100%);
     cursor: pointer; /* Indique que l'élément est cliquable */
 }
 .page-title {
