@@ -1,3 +1,4 @@
+/* Basic styles for the body and HTML */
 body, html {
     height: 100%;
     margin: 0;
@@ -5,31 +6,36 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
+/* Style for the map element */
 #map {
     height: 80%;
     width: 80%;
     margin: 3% auto;
 }
 
+/* Style for information windows */
 .info-window {
     font-size: 14px;
     color: #333;
 }
 
+/* Style for page titles */
 .page-title {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size:150%; 
+    font-size: 150%; 
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
     margin: auto auto; 
-  }
+}
 
+/* Container for buttons */
 .button {
     display: flex;     
     justify-content: center; 
 }
 
-.button a{
+/* Style for individual buttons */
+.button a {
     padding: 1% 1%;
     background-color: #002fad;
     color: white;
@@ -44,14 +50,22 @@ body, html {
     transition: transform 0.5s ease;
 }
 
-.button a:hover{
+/* Hover effect for buttons */
+.button a:hover {
     background: linear-gradient(147deg, #00c6fd 45%, #3cff99 100%);
     box-shadow: 0px 0px 1vw 0.5vw rgba(0, 0, 0, 0.5);
     transform: scale(1.2);
 }
 
-.button a:hover i{
+/* Hover effect for icons inside buttons */
+.button a:hover i {
     margin-right: 1vw;
     transform: scale(1.5);
     transition: transform 0.5s ease;
+}
+
+/* Style for selected buttons */
+.button a.selected {
+    background: linear-gradient(147deg, #3cff99 45%, #00c6fd 100%);
+    box-shadow: 0px 0px 1vw 0.5vw rgba(0, 0, 0, 0.5);
 }

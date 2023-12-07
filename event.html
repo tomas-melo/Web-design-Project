@@ -2,75 +2,155 @@
 <html>
 <head>
     <title>Porto - Events</title>
+    <!-- Basic page settings -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main and event-specific stylesheets -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/event.css">
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Website favicon -->
     <link rel="icon" href="img/main/logo-page.png" type="image/png">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Banner Image -->
     <div class="PortoBanner">
         <img src="img/main/porto-city-little.png">
-      </div>
-  
-      <div class="progress-container">
+    </div>
+
+    <!-- Progress Bar for scrolling -->
+    <div class="progress-container">
         <div class="progress-bar" id="ScrollIndicator"></div>
-      </div>
-  
-      <script src="script/ScrollIndicator.js"></script>
+    </div>
+
+    <!-- Script for scroll indicator functionality -->
+    <script src="script/ScrollIndicator.js"></script>
+
+    <!-- Header with navigation menu -->
     <header>
       <nav>
+        <!-- Navigation logo -->
         <img src="img/main/porto-gif.gif" class="Nav-logo" />
-  
+
+        <!-- Navigation bar with links -->
         <ul class="navbar">
           <li class="nav-item"><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+          <!-- Current page indicated as active -->
           <li class="nav-item active"><a href="event.html"><i class="fas fa-newspaper"></i> News</a>
+            <!-- Dropdown for related pages -->
             <ul>
               <li class="nav-item dropdown"><a href="event.html"><i class="fa-regular fa-calendar-check"></i> Events</a></li>
               <li class="nav-item dropdown"><a href="calendar.html"><i class="fa-solid fa-calendar-days"></i> Calendar</a></li>
             </ul>
           </li>
+          <!-- Other navigation items -->
           <li class="nav-item"><a href="history.html"><i class="fa-solid fa-book-open"></i> History</a></li>
           <li class="nav-item"><a href="sightseeings.html"><i class="fa-solid fa-city"></i> Sightseeings</a></li>
           <li class="nav-item"><a href="services.html"><i class="fa-solid fa-bell-concierge"></i> Services</a></li>
           <li class="nav-item last"><a href="contact.html"><i class="fa-solid fa-address-book"></i> Contact</a></li>
         </ul>
       </nav>
-    </header>  
+    </header>
 
-  <main>
-    <section id="events">
-      <h2 class="page-title">NEXT EVENTS</h2>
+    <!-- Main content area -->
+    <main>
+      <section id="events">
+        <!-- Section title -->
+        <h2 class="page-title">NEXT EVENTS</h2>
+
+        <!-- Event entries -->
+        <!-- Each event has an image, link, and description -->
+        <!-- Example of the first event -->
+        <div class="event">
+          <div class="event-image">
+            <a href="https://www.eventbrite.fr/e/bilhetes-in-porto-club-de-viagens-viajar-por-menos-gratis-ser-pago-para-viajar-768227538247?aff=ebdssbdestsearch&keep_tld=1" class="event-link">
+              <img src="img/event1.jpg" alt="Event 1">
+            </a>
+            <div class="title-overlay">Unleashing talent for the future</div>
+          </div>
+          <div class="event-details">
+              <span class="event-category">MEET UP</span>
+              <span class="event-date">Monday, December 4</span>
+              <p class="event-description">At People4People's #26 MeetUp we will discuss with Tiago Forjaz the theme of "freeing talent for the future".</p>
+           </div>
+       </div>
+
+       <!-- Additional events follow a similar structure -->
+       <!-- ... other event divs ... -->
+
       <div class="event">
         <div class="event-image">
-          <a href="url-to-buy-tickets.html" class="event-link">
-            <img src="img/event1.jpg" alt="Événement 1">
+          <a href="https://www.eventbrite.fr/e/intro-to-porto-tech-scene-tickets-748425459697?aff=ebdssbcitybrowse&keep_tld=1" class="event-link">
+            <img src="img/event2.jpg" alt="Event 2">
           </a>
-            <div class="title-overlay">Libertar talento para o futuro</div>
+            <div class="title-overlay">Intro to Porto Tech Scene</div>
         </div>
         <div class="event-details">
-            <span class="event-category">MEET UP</span>
-            <span class="event-date">Monday, November 28</span>
-            <p class="event-description">At People4People's #26 MeetUp we will discuss with Tiago Forjaz the theme of "freeing talent for the future".</p>
-         </div>
-     </div>
-    <div class="event">
-      <div class="event-image">
-        <a href="https://www.eventbrite.fr/e/intro-to-porto-tech-scene-tickets-748425459697?aff=ebdssbcitybrowse&keep_tld=1" class="event-link">
-          <img src="img/event2.jpg" alt="Événement 2">
-        </a>
-          <div class="title-overlay">Intro to Porto Tech Scene</div>
+            <span class="event-category">MEETING</span>
+            <span class="event-date">Thursday, December 21</span>
+            <p class="event-description">We invite you to an introduction to the exciting world of startups and technology in Porto.</p></div>
       </div>
-      <div class="event-details">
-          <span class="event-category">MEETING</span>
-          <span class="event-date">Thursday, November 30</span>
-          <p class="event-description">We invite you to an introduction to the exciting world of startups and technology in Porto.</p>
-       </div>
-    </div>
+
+      <div class="event">
+          <div class="event-image">
+            <a href="https://www.eventbrite.fr/e/bilhetes-city-cafe-dados-para-cidades-verdes-joao-afonso-pereira-739449532457?aff=ebdssbcitybrowse&keep_tld=1" class="event-link">
+              <img src="img/event3.jpg" alt="Event 3">
+            </a>
+            <div class="title-overlay">City Café | Data for Green Cities</div>
+        </div>
+        <div class="event-details">
+            <span class="event-category">MEETING</span>
+            <span class="event-date">Wednesday, December 2023</span>
+            <p class="event-description">City Café sessions are informal and relaxed, just like a "coffee break", and serve to address current topics that deserve reflection.</p>
+        </div>
+      </div>
+
+        <div class="event">
+          <div class="event-image">
+            <a href="https://www.eventbrite.fr/e/spark-your-speeches-masterclass-porto-tickets-760719290877?aff=ebdssbcitybrowse&keep_tld=1" class="event-link">
+              <img src="img/event4.jpg" alt="Event 4">
+            </a>
+            <div class="title-overlay">Spark Your Speeches</div>
+          </div>
+          <div class="event-details">
+              <span class="event-category">MASTERCLASS</span>
+              <span class="event-date">Thursday, December 14</span>
+              <p class="event-description">You'll learn how to deliver captivating content so that you grab your audience's attention from your very first word</p>
+          </div>
+         </div>
+
+        <div class="event">
+            <div class="event-image">
+              <a href="https://www.eventbrite.fr/e/soma-groove-sessions-porto-tickets-770439163277?aff=ebdssbdestsearch&keep_tld=1" class="event-link">
+                <img src="img/event5.jpg" alt="Event 5">
+              </a>
+                <div class="title-overlay">SOMA GROOVE SESSIONS</div>
+            </div>
+            <div class="event-details">
+                <span class="event-category">DANCE</span>
+                <span class="event-date">Friday, December 22</span>
+                <p class="event-description">Join our vibrant community and embark on a profound journey of self-discovery, empowerment, and trauma release. Become a SOMA GROOVER!</p>
+             </div>
+        </div>
+
+        <div class="event">
+          <div class="event-image">
+            <a href="https://www.eventbrite.fr/e/bilhetes-re-clubbing-x-hype-bons-filhos-a-casa-tornam-porto-portugal-763005870097?aff=ebdssbdestsearch&keep_tld=1" class="event-link">
+              <img src="img/event6.jpg" alt="Event 6">
+            </a>
+              <div class="title-overlay">RE-CLUBBING x HYPE</div>
+          </div>
+          <div class="event-details">
+            <span class="event-category">MUSIC</span>
+            <span class="event-date">Friday, December 8</span>
+            <p class="event-description">After three years raving into the Barcelona underground dancefloors, we are heading into our home PORTO, Portugal.</p>
+              </div>
+          </div>
     </section>
   </main>
 

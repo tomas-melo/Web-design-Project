@@ -1,108 +1,125 @@
+/* Styling for the event container */
 .event {
-    display: flex;
-    flex-direction: row; 
-    justify-content: flex-start;
-    align-items: stretch;
-    background: #fff; /* Fond blanc pour le contenu de l'événement */
-    margin: auto auto; /* Marge en haut et en bas, auto pour gauche et droite pour le centrage */
-    max-width: 80%; /* Largeur maximale du conteneur de l'événement */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Ombre portée pour le style */
-    overflow: hidden;
-    margin-bottom: 5%;
-  }
-  
-  .event-image {
-    position: relative;
-    flex: 0 0 40%; /* Ne pas grandir ou rétrécir, base initiale à 40% */
-    max-width: 40%;
-    width: 40%; /* Largeur fixe pour l'image */
-    overflow: hidden; /* Cache les débordements de contenu */
-    margin: 0; /* Réinitialisez les marges pour ces éléments */
-    padding: 0; /* Réinitialisez le padding pour ces éléments */
-  }
-  
-  .event-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Assure que l'image couvre l'espace sans être déformée */
-    transition: transform 0.5s ease, opacity 0.5s ease; /* Transition fluide pour l'effet de survol */
-  }
-  .event-category {
-    font-family: 'Arial', sans-serif; /* Police simple pour les catégories */
-    font-size: 130%;
-    color: #555; /* Couleur gris foncé pour les catégories */
-    text-transform: uppercase; /* Les catégories en majuscules */
-    letter-spacing: 10%; /* Espacement des lettres pour les catégories */
-  }
-  .event-date {
-    font-family: 'Arial', sans-serif;
-    font-size: 110%;
-    color: #888888; /* Couleur gris moyen pour la date */
-    padding-bottom: 7%;
-  }
-  .event-description {
-    font-family: 'Georgia', serif; /* Police avec empattement pour la description */
-    font-size: 80%;
-    color: #333; /* Couleur gris très foncé pour le texte */
-    line-height: 1; /* Espacement des lignes pour la description */
-  }
-  .event-image img:hover   {
-    opacity: 0.6; /* L'image devient plus transparente lorsqu'elle est cliquée */
-    transform: scale(0.98); /* L'image se réduit légèrement lorsqu'elle est cliquée */
-  }
-  
-  .event-image:hover .title-overlay {
-    background: rgba(0,0,0,0.8); /* Le fond du titre s'assombrit au survol */
-    transition: background-color 0.5s ease, font-size 0.5s ease; /* Transition pour les deux propriétés */
-  }
-  
-  .title-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(0,0,0,0.6); /* Fond semi-transparent pour le texte superposé */
-    color: white;
-    padding: 3%; /* Espacement interne pour le texte */
-    font-size: 75%; /* Taille de police pour le texte superposé */
-    transition: background-color 0.5s ease; /* Transition pour l'effet d'assombrissement au survol */
-  }
-  
-  .event-details {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    padding: 2%; /* Ajoute un peu d'espacement */
-    line-height: 1.2;
-    text-align: center;
-    background: #f5f5f5; /* Fond gris clair pour les détails de l'événement */
-    justify-content: center;
-  }
+  display: flex;
+  flex-direction: row; 
+  justify-content: flex-start;
+  align-items: stretch;
+  background: #fff;
+  margin: auto auto;
+  max-width: 80%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  overflow: hidden;
+  margin-bottom: 5%;
+}
 
-  .page-title {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 150%; /* Ajustez la taille de police selon vos besoins */
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* Ombre portée pour le titre */
-    margin: auto auto; /* Ajustez les marges selon vos besoins */
-    padding-bottom: 2.5%;
+/* Styling for the event image container */
+.event-image {
+  position: relative;
+  flex: 0 0 40%;
+  max-width: 40%;
+  width: 40%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for images within the event image container */
+.event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Styling for event categories */
+.event-category {
+  font-family: 'Arial', sans-serif;
+  font-size: 130%;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 10%;
+}
+
+/* Styling for event dates */
+.event-date {
+  font-family: 'Arial', sans-serif;
+  font-size: 110%;
+  color: #888888;
+  padding-bottom: 7%;
+}
+
+/* Styling for event descriptions */
+.event-description {
+  font-family: 'Georgia', serif;
+  font-size: 80%;
+  color: #333;
+  line-height: 1;
+}
+
+/* Hover effect for event images */
+.event-image img:hover {
+  opacity: 0.6;
+  transform: scale(0.98);
+}
+
+/* Hover effect for title overlay */
+.event-image:hover .title-overlay {
+  background: rgba(0,0,0,0.8);
+  transition: background-color 0.5s ease, font-size 0.5s ease;
+}
+
+/* Styling for title overlay */
+.title-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 3%;
+  font-size: 75%;
+  transition: background-color 0.5s ease;
+}
+
+/* Styling for event details */
+.event-details {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 2%;
+  line-height: 1.2;
+  text-align: center;
+  background: #f5f5f5;
+  justify-content: center;
+}
+
+/* Styling for the page title */
+.page-title {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 150%;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  margin: auto auto;
+  padding-bottom: 2.5%;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .event {
+    flex-direction: row;
   }
-  @media screen and (max-width: 768px) {
-    .event {
-      flex-direction: row; /* Empile les éléments verticalement sur les petits écrans */
-    }
-    .event-image,
-    .event-details {
-      align-items: stretch; /* Permet aux enfants de .event-details de remplir l'espace */
-    }
-    .event-details {
-      width: 100%; /* Permet à l'image et aux détails de prendre toute la largeur sur petits écrans */
-      max-width: 100%;
-    }
-    .event-category, .event-date, .event-description {
-      font-size: 80%; /* Réduit la taille pour les petits écrans */
-    }
-    .title-overlay {
-      font-size: 75%; /* Ajuste la taille de police du texte superposé pour les petits écrans */
-    }
+  .event-image,
+  .event-details {
+    align-items: stretch;
   }
+  .event-details {
+    width: 100%;
+    max-width: 100%;
+  }
+  .event-category, .event-date, .event-description {
+    font-size: 80%;
+  }
+  .title-overlay {
+    font-size: 75%;
+  }
+}
