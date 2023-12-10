@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Porto - Calendar</title>
+  <!-- Basic page settings -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Main and calendar-specific stylesheets -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/calendar.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Website favicon -->
+  <link rel="icon" href="img/main/logo-page.png" type="image/png">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Banner Image -->
+    <div class="PortoBanner">
+      <img src="img/main/porto-city-little.png">
+    </div>
+
+    <!-- Progress Bar for scrolling -->
+    <div class="progress-container">
+      <div class="progress-bar" id="ScrollIndicator"></div>
+    </div>
+
+    <!-- Script for scroll indicator functionality -->
+    <script src="script/ScrollIndicator.js"></script>
+
+    <!-- Header with navigation menu -->
+    <header>
+      <nav>
+        <!-- Navigation logo -->
+        <img src="img/main/porto-gif.gif" class="Nav-logo" />
+
+        <!-- Navigation bar with links -->
+        <ul class="navbar">
+          <!-- Navigation items, marking current page as active -->
+          <li class="nav-item"><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+          <li class="nav-item active"><a href="event.html"><i class="fas fa-newspaper"></i> News</a>
+            <!-- Dropdown for related pages -->
+            <ul>
+              <li class="nav-item dropdown"><a href="event.html"><i class="fa-regular fa-calendar-check"></i> Events</a></li>
+              <li class="nav-item dropdown"><a href="calendar.html"><i class="fa-solid fa-calendar-days"></i> Calendar</a></li>
+            </ul>
+          </li>
+          <!-- Other navigation items -->
+          <li class="nav-item"><a href="history.html"><i class="fa-solid fa-book-open"></i> History</a></li>
+          <li class="nav-item"><a href="sightseeings.html"><i class="fa-solid fa-city"></i> Sightseeings</a></li>
+          <li class="nav-item"><a href="services.html"><i class="fa-solid fa-bell-concierge"></i> Services</a></li>
+          <li class="nav-item last"><a href="contact.html"><i class="fa-solid fa-address-book"></i> Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main content area -->
+    <body>
+      <!-- Page title -->
+      <h2 class="page-title">FUTURE EVENTS CALENDAR</h2>
+      <!-- Calendar placeholder -->
+      <div id="calendar"></div>
+      <!-- Event details section -->
+      <div id="events"></div>
+
+      <!-- Footer with credits and logo -->
+      <footer>
+        <img src="img/main/FIT-Logo.png" class="FIT" alt="FIT"/>
+        <h4> &nbsp; Web Design Project</h4>
+        <h6>Created By</h6>
+        <p>Kilyan BENTCHAKAL</p>
+        <p>Tomas MELO</p>
+        <p>Vincent RODRIGUES</p>
+      </footer>
+
+      <!-- Calendar functionality script -->
+      <script src="script/calendar.js"></script>
+      <!-- Script for adding events to the calendar -->
+    <script>
+      addEventToStorage('Unleashing talent for the future', '2023-12-04','img/event1.jpg', 'https://www.eventbrite.fr/e/bilhetes-in-porto-club-de-viagens-viajar-por-menos-gratis-ser-pago-para-viajar-768227538247?aff=ebdssbdestsearch&keep_tld=1');
+      addEventToStorage('City Café | Green Cities', '2023-12-13','img/event3.jpg', 'https://www.eventbrite.fr/e/bilhetes-city-cafe-dados-para-cidades-verdes-joao-afonso-pereira-739449532457?aff=ebdssbcitybrowse&keep_tld=1');
+      addEventToStorage('Intro to Porto Tech Scene', '2023-12-21','img/event2.jpg','https://www.eventbrite.fr/e/intro-to-porto-tech-scene-tickets-748425459697?aff=ebdssbcitybrowse&keep_tld=1');
+      addEventToStorage('Spark Your Speeches', '2023-12-14','img/event4.jpg','https://www.eventbrite.fr/e/spark-your-speeches-masterclass-porto-tickets-760719290877?aff=ebdssbcitybrowse&keep_tld=1');
+      addEventToStorage('Soma Groove Sessions', '2023-12-22','img/event5.jpg','https://www.eventbrite.fr/e/soma-groove-sessions-porto-tickets-770439163277?aff=ebdssbdestsearch&keep_tld=1')
+      addEventToStorage('Re-clubbing x hype', '2023-12-08','img/event6.jpg','https://www.eventbrite.fr/e/bilhetes-re-clubbing-x-hype-bons-filhos-a-casa-tornam-porto-portugal-763005870097?aff=ebdssbdestsearch&keep_tld=1' );
+    </script>
+</body>
+</html>

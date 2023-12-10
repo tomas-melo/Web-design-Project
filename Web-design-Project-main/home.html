@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="img/main/logo-page.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+  <title>Porto - Home</title>
+  <link rel="stylesheet" type="text/css" href="css/home.css">
+</head>
+
+<body>
+    <!-- Banner Image -->
+    <div class="PortoBanner">
+      <img src="img/main/porto-city-little.png">
+    </div>
+    
+    <!-- Progress Bar Container -->
+    <div class="progress-container">
+      <div class="progress-bar" id="ScrollIndicator"></div>
+    </div>
+    
+    <!-- Scroll Indicator Script -->
+    <script src="script/ScrollIndicator.js"></script>
+    
+    <!-- Header and Navigation -->
+    <header>
+      <nav>
+        <!-- Navigation Logo -->
+        <img src="img/main/porto-gif.gif" class="Nav-logo" />
+    
+        <!-- Navigation Bar -->
+        <ul class="navbar">
+          <!-- Navigation Items -->
+          <!-- Each item includes an icon and a text label -->
+        <li class="nav-item active"><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+        <li class="nav-item"><a href="event.html"><i class="fas fa-newspaper"></i> News</a>
+          <!-- Dropdown Menu for News -->
+          <ul>
+            <li class="nav-item dropdown"><a href="event.html"><i class="fa-regular fa-calendar-check"></i> Events</a></li>
+            <li class="nav-item dropdown"><a href="calendar.html"><i class="fa-solid fa-calendar-days"></i> Calendar</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="history.html"><i class="fa-solid fa-book-open"></i> History</a></li>
+        <li class="nav-item"><a href="sightseeings.html"><i class="fa-solid fa-city"></i> Sightseeings</a></li>
+        <li class="nav-item"><a href="services.html"><i class="fa-solid fa-bell-concierge"></i> Services</a></li>
+        <li class="nav-item last"><a href="contact.html"><i class="fa-solid fa-address-book"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <div id="homeContent" class="home-content">
+      <section>
+        <!-- Page Title -->
+        <h2 class="page-title"> BEM-VINDO! , WELCOME !</h2>
+        <p>
+          Welcome to our dedicated Porto website, a city rich in history, culture, and beauty. Explore our site to discover everything Porto has to offer, from the latest news to iconic landmarks and unique services. We are delighted to guide you through this virtual experience of one of Portugal's most captivating destinations!
+        </p>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 11</div>
+            <img src="img/home/porto-portugal-city-church.jpg">
+            <div class="text">Porto Cathedral - Saint Mary of Porto</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 11</div>
+            <img src="img/home/wallpaper-porto-place.jpg">
+            <div class="text">Plaza de la Libertad</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 11</div>
+            <img src="img/home/wallpaper-porto-ponte.jpg">
+            <div class="text">Ponte Dom Luis</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 11</div>
+            <img src="img/home/wallpaper-capela das almas.jpg">
+            <div class="text">Capela das Almas</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 11</div>
+            <img src="img/home/wallpaper-cultural.jpg">
+            <div class="text">Porto Museum - World of Wine</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 11</div>
+            <img src="img/home/wallpaper-douro.jpg">
+            <div class="text">Porto Douro</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">7 / 11</div>
+            <img src="img/home/wallapaper-teleferico de gaia.jpg">
+            <div class="text">Teleferico de Gaia</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">8 / 11</div>
+            <img src="img/home/wallapaper-casa portuguesa.jpg">
+            <div class="text">Casa portuguesa do pastel de bacalhau</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">9 / 11</div>
+            <img src="img/home/wallpaper-church of Saint IIdefonso.jpeg">
+            <div class="text">Church of Saint IlDefonse</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">10 / 11</div>
+            <img src="img/home/wallapaper-funicular dos guindais.jpg">
+            <div class="text">Funicular dos Guindais</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">11 / 11</div>
+            <img src="img/home/wallpaper-clerigos tower.jpg">
+            <div class="text">Clerigos Tower</div>
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <div class="slide-dots">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span> 
+          <span class="dot" onclick="currentSlide(6)"></span> 
+          <span class="dot" onclick="currentSlide(7)"></span> 
+          <span class="dot" onclick="currentSlide(8)"></span> 
+          <span class="dot" onclick="currentSlide(9)"></span> 
+          <span class="dot" onclick="currentSlide(10)"></span> 
+          <span class="dot" onclick="currentSlide(11)"></span> 
+        </div>
+          
+        <div class="highlights">
+          <h2>Highlights of Porto : </h2>
+          <ol role="list">
+            <li>Porto's historic centre is one of the oldest in Europe and has been recognised by UNESCO as a World Heritage Site. The narrow cobbled streets, colourful houses and centuries-old churches offer a glimpse into the city's rich history.</li>
+            <li>The bridges spanning the Douro River, such as the Dom Luís I Bridge, are emblematic of Porto. These majestic structures offer panoramic views over the city and are masterpieces of engineering. They also create a unique and memorable urban landscape.</li>
+            <li>Porto is a hotbed of culture and art. Museums, art galleries and theatres abound, showcasing the city's cultural heritage. Festivals and artistic events throughout the year make Porto a dynamic place for art and culture lovers.</li>
+            <li>Although Porto is often associated with its historic architecture, the city also offers access to magnificent beaches. The fine sandy beaches of Foz do Douro offer a tranquil escape, and the proximity of the sea provides opportunities for water sports and relaxing in the sun.</li>
+          </ol>
+        </div>
+        
+        <h2>Celebrities Testimonials</h2>
+        <div class="carousel-container">
+          <div class="testimonial-carousel">
+            <div class="testimonial testimonial-active">
+              <img src="img/home/pablo-picasso.jpg">
+              <h5>Pablo Picasso</h5>
+              <p>“ Porto's cultural richness lies in its diversity, where every corner is a new page in a fascinating book. ”</p>
+            </div>
+            <div class="testimonial">
+              <img src="img/home/elon-musk.jpg">
+              <h5>Elon Musk</h5>
+              <p>“ Porto's majestic bridges are links between history and the future, a perfect balance between tradition and innovation. ”</p>
+            </div>
+            <div class="testimonial">
+              <img src="img/home/jk-rowling.jpg">
+              <h5>J.K. Rowling</h5>
+              <p>“ There's something magical in the Porto air that brings creativity and inspiration to life. ”</p>
+            </div>
+            <div class="testimonial">
+              <img src="img/home/albert-einstein.jpg">
+              <h5>Albert Einstein</h5>
+              <p>“ Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world. ”</p>
+            </div>
+          </div>
+          <a class="prev-tes" onclick="changeTestimonial(-1)">❮</a>
+          <a class="next-tes" onclick="changeTestimonial(1)">❯</a>
+        </div>
+        <div class="testimonial-dots">
+          <span class="dot-tes dot-tes-active" onclick="currentTestimonial(1)"></span>
+          <span class="dot-tes" onclick="currentTestimonial(2)"></span>
+          <span class="dot-tes" onclick="currentTestimonial(3)"></span>
+          <span class="dot-tes" onclick="currentTestimonial(4)"></span>
+        </div>
+
+        <h2>Want to discover more ?</h2>
+        <h4 style="text-align: center;">Start your Porto adventure now by exploring our sections:</h4>
+        <div class="explorer-container">
+          <a class="explore-button" href="event.html"><i class="fas fa-newspaper"></i> News</a>
+          <a class="explore-button" href="history.html"><i class="fa-solid fa-book-open"></i> History</a>
+          <a class="explore-button" href="sightseeings.html"><i class="fa-solid fa-city"></i> Sightseeings</a>
+          <a class="explore-button" href="services.html"><i class="fa-solid fa-bell-concierge"></i> Services</a>
+          <a class="explore-button" href="contact.html"><i class="fa-solid fa-address-book"></i> Contact</a>
+        </div>
+      </section>
+    </div>
+    <!-- Footer Section -->
+  <footer>
+    <!-- FIT Logo -->
+    <img src="img/main/FIT-Logo.png" class="FIT" alt="FIT"/>
+    <h4> &nbsp; Web Design Project</h4>
+    <h6>Created By</h6>
+    <p>Kilyan BENTCHAKAL</p>
+    <p>Tomas MELO</p>
+    <p>Vincent RODRIGUES</p>
+    <p>&emsp;</p>
+  </footer>
+  <script src="script/home.js"></script>
+</body>
+</html>
+
+

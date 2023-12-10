@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="img/main/logo-page.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/sightseeings.css">
+    <title>Porto - Sightseeings</title>
+</head>
+
+<body>
+    <!-- Banner Image -->
+    <div class="PortoBanner">
+        <img src="img/main/porto-city-little.png">
+    </div>
+
+    <!-- Progress Bar Container -->
+    <div class="progress-container">
+        <div class="progress-bar" id="ScrollIndicator"></div>
+    </div>
+
+    <!-- Scroll Indicator Script -->
+    <script src="script/ScrollIndicator.js"></script>
+
+    <!-- Header and Navigation -->
+    <header>
+        <nav>
+            <!-- Navigation Logo -->
+            <img src="img/main/porto-gif.gif" class="Nav-logo" />
+
+            <!-- Navigation Bar -->
+            <ul class="navbar">
+                <!-- Navigation Items -->
+                <!-- Each item includes an icon and a text label -->
+                <li class="nav-item"><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                <li class="nav-item"><a href="event.html"><i class="fas fa-newspaper"></i> News</a>
+                    <!-- Dropdown Menu for News -->
+                    <ul>
+                        <li class="nav-item dropdown"><a href="event.html"><i class="fa-regular fa-calendar-check"></i>
+                                Events</a></li>
+                        <li class="nav-item dropdown"><a href="calendar.html"><i class="fa-solid fa-calendar-days"></i>
+                                Calendar</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="history.html"><i class="fa-solid fa-book-open"></i> History</a></li>
+                <li class="nav-item active"><a href="sightseeings.html"><i class="fa-solid fa-city"></i>
+                        Sightseeings</a>
+                </li>
+                <li class="nav-item"><a href="services.html"><i class="fa-solid fa-bell-concierge"></i> Services</a>
+                </li>
+                <li class="nav-item last"><a href="contact.html"><i class="fa-solid fa-address-book"></i> Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Title -->
+    <div class="sightseeings">
+        <h2 class="page-title">EXPLORE PORTO SIGHTSEEINGS</h2>
+
+        <!-- Ribeira District -->
+        <div class="sightseeing-container">
+            <div class="sightseeing-info">
+                <h2>Ribeira District</h2>
+                <p>The historic Ribeira District is a charming neighborhood located along the Douro River in Porto.
+                    Known
+                    for its picturesque streets and vibrant atmosphere, Ribeira is a UNESCO World Heritage site that
+                    captures the essence of Porto's rich history and culture.</p>
+
+                <p>Wander through the narrow, winding streets, and you'll encounter colorful buildings that reflect the
+                    city's maritime past. The district is a hub of activity, with numerous cafes, restaurants, and shops
+                    offering a delightful experience for visitors.</p>
+
+                <p>As you explore Ribeira, you'll be captivated by the stunning views of the Douro River and the iconic
+                    Dom Luís I Bridge. The riverside promenade is perfect for a leisurely stroll, allowing you to soak
+                    in the beauty of the city.</p>
+            </div>
+
+            <div class="sightseeing-images">
+                <!-- Image Carousel for Ribeira District -->
+                <div class="carousel-item" data-sightseeing="ribeira">
+                    <img src="img/sightseeings/ribeira-oporto2.jpg" alt="Ribeira District Image 2">
+                    <img src="img/sightseeings/ribeira-oporto.jpg" alt="Ribeira District Image 1">
+                    <img src="img/sightseeings/ribeira-oporto3.jpg" alt="Ribeira District Image 3">
+                    <div class="image-navigation">
+                        <button class="nav-btn prev" onclick="prevImage()">❮ Prev</button>
+                        <button class="nav-btn next" onclick="nextImage()">Next ❯</button>
+                    </div>
+                    <!-- Add more images as needed -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Livraria Lello -->
+        <div class="sightseeing-container">
+            <div class="sightseeing-info">
+                <h2>Livraria Lello</h2>
+                <p>Livraria Lello, located in Porto, is one of the most iconic and beautiful bookstores in the world.
+                </p>
+                <p>With its neo-gothic architecture and intricate wooden details, the bookstore is a haven for book
+                    lovers and architecture enthusiasts alike. It is known for its grand staircase, stained glass, and
+                    the magical ambiance that inspired J.K. Rowling while she was writing the Harry Potter series.
+                </p>
+            </div>
+
+            <div class="sightseeing-images">
+                <div class="carousel-item" data-sightseeing="lello">
+                    <img src="img/sightseeings/livraria-lello.jpg" alt="Livraria Lello Image 1">
+                    <img src="img/sightseeings/livraria-lello3.jpg" alt="Livraria Lello Image 3">
+                    <div class="image-navigation">
+                        <button class="nav-btn prev" onclick="prevImage()">❮ Prev</button>
+                        <button class="nav-btn next" onclick="nextImage()">Next ❯</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Jardim do Morro -->
+        <div class="sightseeing-container">
+            <div class="sightseeing-info">
+                <h2>Jardim do Morro</h2>
+                <p>Jardim do Morro, situated across the Douro River in Vila Nova de Gaia, provides a stunning panoramic
+                    view of the city of Porto. This garden is perched on the hillside, offering a peaceful escape with
+                    well-maintained greenery and pathways. Visitors can enjoy a leisurely stroll through the garden
+                    while taking in breathtaking views of Porto's historic skyline, including landmarks such as the
+                    Ribeira District, Dom Luís I Bridge, and the riverside architecture. Jardim do Morro is not only a
+                    beautiful garden but also a perfect vantage point to appreciate the charm and beauty of Porto from
+                    a different perspective.</p>
+            </div>
+
+            <div class="sightseeing-images">
+                <div class="carousel-item" data-sightseeing="jardim">
+                    <img src="img/sightseeings/jardim-do-morro.jpg" alt="Jardim Image 1">
+                    <img src="img/sightseeings/jardim-do-morro1.jpg" alt="Jardim Image 2">
+                    <img src="img/sightseeings/jardim-do-morro3.jpg" alt="Jardim Image 3">
+                    <div class="image-navigation">
+                        <button class="nav-btn prev" onclick="prevImage()">❮ Prev</button>
+                        <button class="nav-btn next" onclick="nextImage()">Next ❯</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Capela do Sr da Pedra -->
+        <div class="sightseeing-container">
+            <div class="sightseeing-info">
+                <h2>Capela do Sr da Pedra</h2>
+                <p>Capela do Sr da Pedra is a charming chapel located in Gaia, a council of Porto. It holds historical
+                    and cultural significance, offering visitors a glimpse into the rich heritage of the region.</p>
+                <p>The chapel is known for its unique architecture and serene surroundings. It stands as a testament to
+                    the cultural diversity and religious traditions of the area.</p>
+                <p>Take a moment to explore the beauty of Capela do Sr da Pedra and appreciate the historical gems that
+                    contribute to the cultural tapestry of Porto and its surrounding areas.</p>
+        </div>
+
+            <div class="sightseeing-images">
+                <div class="carousel-item" data-sightseeing="capela" >
+                    <img src="img/sightseeings/capela-do-sr-da-pedra.jpg" alt="Capela Image 1">
+                    <img src="img/sightseeings/capela-do-sr-d-a-pedra2.jpg" alt="Capela Image 2">
+                    <div class="image-navigation">
+                        <button class="nav-btn prev" onclick="prevImage()">❮ Prev</button>
+                        <button class="nav-btn next" onclick="nextImage()">Next ❯</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      
+    </div>
+
+    <!-- Footer Section  -->
+    <footer>
+        <!-- FIT Logo -->
+        <img src="img/main/FIT-Logo.png" class="FIT" alt="FIT" />
+        <h4> &nbsp; Web Design Project</h4>
+        <h6>Created By</h6>
+        <p>Kilyan BENTCHAKAL</p>
+        <p>Tomas MELO</p>
+        <p>Vincent RODRIGUES</p>
+    </footer>
+    <script src="script/sightseeings.js"></script>
+</body>
+
+</html>

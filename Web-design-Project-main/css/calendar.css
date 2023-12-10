@@ -1,0 +1,62 @@
+/* Styling for the calendar */
+#calendar {
+    max-width: 90%;
+    margin: auto auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a shadow for a depth effect */
+}
+
+/* Styling for calendar headers and cells */
+#calendar th, #calendar td {
+    border: 1px solid #ddd;
+    padding: 1%;
+    text-align: center;
+}
+
+/* Styling for calendar headers */
+#calendar th {
+    width: 14%; /* 100% divided by the number of columns (7) */
+    height: 100px; 
+    background: linear-gradient(147deg, #002fad 50%, #00c6fd 100%);
+    color: white; 
+}
+
+/* Styling for calendar rows */
+#calendar tr {
+    height: 100px; /* Fixed height for the rows */
+}
+
+/* Styling for calendar events */
+.calendar-event {
+    background-color: #002fad;
+    font-size: 45%; 
+    color: white; 
+    padding: 10px;
+    margin-top: 5px;
+    border-bottom: 0.3vw solid #3cff99;
+    border-top: 0.3vw solid #00c6fd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Small shadow for events */
+}
+
+/* Hover effect for calendar events */
+.calendar-event:hover {
+    background: linear-gradient(147deg, #00c6fd 45%, #3cff99 100%);
+    cursor: pointer;
+}
+
+/* Styling for the page title */
+.page-title {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 150%; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    margin: auto auto; 
+    padding-bottom: 2.5%;
+}
+
+/* Styling for calendar event links */
+.calendar-event-link {
+    text-decoration: none;
+    color: inherit;
+}
