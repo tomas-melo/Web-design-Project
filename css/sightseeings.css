@@ -21,17 +21,23 @@
 }
 
 .sightseeing-info {
-    width: 100%;
+    width: 80%;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
-    color: #555;
+    color: color;
     margin-bottom: 20px;
 }
 
+.sightseeing-info p{
+    font-size: 2vw;
+    margin-top: 1em; /* Create a line break between paragraphs */
+    margin-bottom: 1em; /* Create a line break between paragraphs */
+}
+
 .sightseeing-info h2 {
-    color: blue;
+    color: #002fad;
     font-family: 'Montserrat', sans-serif;
-    font-size: 5vw;
+    font-size: 4vw;
     margin-bottom: 10px;
 }
 
@@ -48,7 +54,6 @@
     margin-top: 30px;
     box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.8);
     display: none;
-
     /* Hide all images by default */
 }
 
@@ -65,8 +70,9 @@
     cursor: pointer;
     background-color: #002fad;
     color: white;
-    border: none;
     border-radius: 5px;
+    border-bottom: 0.3vw solid #3cff99;
+    border-top: 0.3vw solid #00c6fd;
     outline: none;
     font-family: 'Montserrat', sans-serif;
 }
@@ -77,17 +83,4 @@
 /* Hover effect for buttons */
 .nav-btn:hover {
     background: linear-gradient(147deg, #00c6fd 45%, #3cff99 100%);
-}
-
-/* Hover effect for icons inside buttons */
-.nav-btn:hover i {
-    margin-right: 1vw;
-    transform: scale(1.5);
-    transition: transform 0.5s ease;
-}
-
-/* Style for selected buttons */
-.nav-btn.selected {
-    background: linear-gradient(147deg, #3cff99 45%, #00c6fd 100%);
-    box-shadow: 0px 0px 1vw 0.5vw rgba(0, 0, 0, 0.5);
 }
