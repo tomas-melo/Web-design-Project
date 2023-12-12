@@ -18,6 +18,11 @@ This is a project about informations af the city of Porto, Portugal made possibl
 
 In the home directory we have the html files: Calendar, Contact, Event, History, Home, Landing, Services, Sightseeings. Then we have the css folder containing a css file for every html file and a general file called style.css that applies styles in general to all html files. In the folder script we have all the necessary Java script files to make the necessary html files responsive, and for last we have the img folder that contains all the images used in the project.
 
+## GITHUB LINK
+
+https://github.com/tomas-melo/Web-design-Project
+
+
 ## Technologies Used
 
 We used html, css, and JavaScript.
